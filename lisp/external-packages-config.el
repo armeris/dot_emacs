@@ -191,11 +191,13 @@
 (use-package markdown-mode :mode ("\\.md\\'" . gfm-mode))
 
 (use-package
- treemacs
- :hook (treemacs-mode-hook . (lambda () (display-line-numbers-mode -1)))
- :config
- (treemacs-filewatch-mode t)
- (treemacs-git-mode 'simple))
+  treemacs
+  :init
+  (setq insert-directory-program "/opt/homebrew/bin/gls")
+  :hook (treemacs-mode-hook . (lambda () (display-line-numbers-mode -1)))
+  :config
+  (treemacs-filewatch-mode t)
+  (treemacs-git-mode 'simple))
 
 (use-package treemacs-magit :after (treemacs magit))
 (use-package treemacs-icons-dired :after (treemacs dired) :config (treemacs-icons-dired-mode))
