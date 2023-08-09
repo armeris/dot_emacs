@@ -80,7 +80,6 @@
  ;; Fonts
  (set-face-attribute 'default nil :font "Fira Code" :height 170 :weight 'light)
  (set-face-attribute 'fixed-pitch nil :font "Fira Code" :height 170 :weight 'light)
- (set-face-attribute 'variable-pitch nil :font "Droid Sans" :height 170 :weight 'light)
 
  :config
  (global-display-line-numbers-mode)
