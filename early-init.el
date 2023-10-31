@@ -1,5 +1,6 @@
 ;;; early-init.el -*- lexical-binding: t; -*-
 
+(setenv "JAVA_HOME" "/Users/ruben.salinas/.sdkman/candidates/java/20.0.1-zulu")
 ;; Increase the GC threshold for faster startup
 ;; The default is 800 kilobytes.  Measured in bytes.
 (setq gc-cons-threshold (* 50 1000 1000))
@@ -59,4 +60,4 @@
 (customize-set-variable 'initial-major-mode 'fundamental-mode)
 
 ;; Always start maximized
-(add-to-list 'default-frame-alist '(fullscreen . maximized))
+;; (add-to-list 'default-frame-alist '(fullscreen . maximized))
