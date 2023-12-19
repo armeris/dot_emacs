@@ -41,3 +41,5 @@
   :ensure nil
   :config
   (add-to-list 'eglot-server-programs '(elixir-ts-mode "language_server.sh")))
+
+(setq org-default-notes-file "/Users/ruben.salinas/Documents/Notes/inbox.org")

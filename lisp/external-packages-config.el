@@ -258,7 +258,8 @@
 (use-package yaml-mode)
 
 ;; JavaScript configuration
-(use-package js2-mode :init (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode)))
+(use-package js2-mode
+  :init (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode)))
 
 (use-package editorconfig :diminish editorconfig-mode :config (editorconfig-mode 1))
 
