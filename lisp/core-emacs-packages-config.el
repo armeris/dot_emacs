@@ -42,4 +42,10 @@
   :config
   (add-to-list 'eglot-server-programs '(elixir-ts-mode "language_server.sh")))
 
+(setq org-todo-keywords '((sequence "TODO(t)" "PROGRESS(p)" "|" "DONE(d)" "DISCARDED(d!)")))
 (setq org-default-notes-file "/Users/ruben.salinas/Documents/Notes/inbox.org")
+(setq org-capture-templates
+  '(("t" "Todo" entry (file "")
+      "* TODO %?\n%U\n %i\n %a")
+     ("j" "Journal" entry (file "")
+       "* %?\n%U\n %i\n %a")))
