@@ -124,4 +124,7 @@
     ("s-b" . switch-to-buffer)
     ("C-q" . kill-buffer)))
 
+(global-set-key (kbd "C-c l") #'org-store-link)
+(global-set-key (kbd "C-c a") #'org-agenda)
+(global-set-key (kbd "C-c c") #'org-capture)
 ;;; core-emacs-config.el ends here
