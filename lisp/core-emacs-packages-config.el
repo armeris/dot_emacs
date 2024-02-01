@@ -46,6 +46,6 @@
 (setq org-default-notes-file "/Users/ruben.salinas/Documents/Notes/inbox.org")
 (setq org-capture-templates
   '(("t" "Todo" entry (file "")
-      "* TODO %?\n%U\n %i\n %a")
+      "* TODO %A\n%U\n** %?")
      ("j" "Journal" entry (file "")
-       "* %?\n%U\n %i\n %a")))
+       "* %A\n%U\n** %?")))
