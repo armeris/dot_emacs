@@ -272,7 +272,9 @@
     web-mode-code-indent-offset 2)
   :config
   (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
-  (add-to-list 'auto-mode-alist '("\\.eex?\\'" . web-mode)))
+  (add-to-list 'auto-mode-alist '("\\.eex?\\'" . web-mode))
+  (setq web-mode-enable-auto-closing t)
+  (setq web-mode-enable-auto-quoting t))
 
 (use-package ox-gfm)
 (use-package ox-spectacle)
