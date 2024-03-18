@@ -12,7 +12,7 @@
   :config (add-hook 'vterm-mode-hook (lambda () (display-line-numbers-mode -1)))
   :bind (("C-o" . other-window) ("<f5>" . treemacs)))
 
-(use-package multi-vterm :bind ("<f2>" . multi-vterm-project))
+(use-package multi-vterm :bind (("<f2>" . multi-vterm-project) ("<f4>" . multi-vterm-prev)))
 
 (use-package
   helpful
